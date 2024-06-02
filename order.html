@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>الطلب - متجر الكيك </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="order.html">الطلب</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="order">
+            <h1>الطلب</h1>
+            <form action="submit_order.php" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="product">المنتج:</label>
+                <select id="product" name="product" required>
+                    <option value="chocolate_cake">كعكة الشوكولاتة</option>
+                    <option value="fruit_cake">كعكة الفواكه</option>
+                    <option value="Kunafa_cake">كعكة الكنافة</option>
+                    <option value="cheese_cake"> تشيز كيك</option>
+                    <option value="Mini_cake">مني كيك</option>
+                </select>
+                
+                <label for="message">ملاحظات:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 متجر الكيك. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
