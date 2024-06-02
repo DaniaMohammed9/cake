@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>اتصل بنا - متجر الكيك </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="order.html">الطلب</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>اتصل بنا</h1>
+            <p>لديكم أي استفسارات؟ لا تترددوا في التواصل معنا عبر النموذج أدناه:</p>
+
+            <form action="submit_contact.php" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+    <footer>  
+        <p>&copy; 2024 متجر الكيك. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
+
